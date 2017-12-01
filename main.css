@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Ginger Peachy";
+  src: url("fonts/Ginger Peachy.ttf");
+}
+
+body {
+  background-color: #deb351;
+}
+
+div.container {
+  background-color:  #ffffff;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+   margin-left:auto;
+   margin-right:auto;
+   max-width: 960px;
+}
+
+header {
+  background-color: #f41a35;
+  grid-area: header;
+}
+
+main {
+  background-color: #000000;
+  grid-area: main;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+aside {
+  background-color: #000000;
+  grid-area: aside;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #f41a35;
+  grid-area: footer;
+
+}
+
+@media (max-width: 600px) {
+  div.container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+       "header"
+       "main"
+       "aside"
+       "footer"
+  }
+}
+
+h1 {
+  font-family: "Ginger Peachy";
+  text-align: center;
+}
+
+h2 {
+  color: #deb351;
+  text-align: center;
+}
+
+p {
+  color: #deb351;
+  font-size: 20px;
+}
+
+li{
+  color: #deb351;
+}
+
+table {
+  color: #deb351;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #deb351;
+}
